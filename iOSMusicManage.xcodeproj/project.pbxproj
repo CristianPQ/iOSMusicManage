@@ -14,6 +14,7 @@
 		13F435D21CB6B50700F5374C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F435D01CB6B50700F5374C /* LaunchScreen.storyboard */; };
 		13F435DD1CB6B50700F5374C /* iOSMusicManageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F435DC1CB6B50700F5374C /* iOSMusicManageTests.swift */; };
 		13F435E81CB6B50700F5374C /* iOSMusicManageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F435E71CB6B50700F5374C /* iOSMusicManageUITests.swift */; };
+		13F435F81CB744EF00F5374C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F435F71CB744EF00F5374C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		13F435E31CB6B50700F5374C /* iOSMusicManageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMusicManageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F435E71CB6B50700F5374C /* iOSMusicManageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMusicManageUITests.swift; sourceTree = "<group>"; };
 		13F435E91CB6B50700F5374C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F435F71CB744EF00F5374C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,8 @@
 		13F435C61CB6B50700F5374C /* iOSMusicManage */ = {
 			isa = PBXGroup;
 			children = (
+				13F435F91CB7451200F5374C /* ViewControllers */,
 				13F435C71CB6B50700F5374C /* AppDelegate.swift */,
-				13F435C91CB6B50700F5374C /* ViewController.swift */,
 				13F435CB1CB6B50700F5374C /* Main.storyboard */,
 				13F435CE1CB6B50700F5374C /* Assets.xcassets */,
 				13F435D01CB6B50700F5374C /* LaunchScreen.storyboard */,
@@ -123,6 +125,15 @@
 				13F435E91CB6B50700F5374C /* Info.plist */,
 			);
 			path = iOSMusicManageUITests;
+			sourceTree = "<group>";
+		};
+		13F435F91CB7451200F5374C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				13F435C91CB6B50700F5374C /* ViewController.swift */,
+				13F435F71CB744EF00F5374C /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F435F81CB744EF00F5374C /* LoginViewController.swift in Sources */,
 				13F435CA1CB6B50700F5374C /* ViewController.swift in Sources */,
 				13F435C81CB6B50700F5374C /* AppDelegate.swift in Sources */,
 			);
