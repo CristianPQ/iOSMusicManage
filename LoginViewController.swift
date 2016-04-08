@@ -16,9 +16,24 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginTo(sender: UIButton) {
         
-        //user correcto
-        //pass correcta
+        //usernameCorrect()
+        //passwordCorrect()
         
+        let email = "test@test.com"
+        let password = "Passw0rd"
+        let backendless = Backendless.sharedInstance()
+        backendless.userService.login(email, password: password, response: { (logedInUser) -> Void in
+            // Código en caso de login correcto
+            let email = logedInUser.email
+            print("Hola \(email)")
+            },
+            error: { (error) -> Void in
+                // Código en caso de error en el login
+                let message = error.message
+                print("Error en login: \(message)")
+        })
+        
+        performSegueWithIdentifier("LoginToNavigation", sender: self)
         
     }
     
@@ -45,5 +60,13 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func passwordCorrect( ) {
+        
+    }
+    
+    func usernameCorrect( ) {
+        
+    }
 
 }
